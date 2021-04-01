@@ -1,4 +1,3 @@
-
 {
     'name': "My Library",  # Module title
     'summary': "Manage books easily",  # Module subtitle phrase
