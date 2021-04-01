@@ -16,7 +16,9 @@ Description related to library.
     'data': [
         'views/library_book.xml'
     ],
-
+    'installable': True,
+    'auto_install': False,
+    'application': True,
     # This demo data files will be loaded if db initialize with demo data (commented because file is not added in this example)
     # 'demo': [
     #     'demo.xml'
