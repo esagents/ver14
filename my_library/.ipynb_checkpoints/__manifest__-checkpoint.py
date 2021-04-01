@@ -9,7 +9,7 @@ Description related to library.
     'author': "Test",
     'website': "http://www.example.com",
     'category': 'Tools',
-    'version': '14.0.1',
+    'version': '14.0.2',
     'depends': ['base'],
 
     'data': [

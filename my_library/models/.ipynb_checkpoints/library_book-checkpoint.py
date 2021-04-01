@@ -9,3 +9,7 @@ class LibraryBook(models.Model):
     name = fields.Char('Title', required=True)
     date_release = fields.Date('Release Date')
     author_ids = fields.Many2many('res.partner', string='Authors')
+    model_ids = fields.Many2many('ir.model', string='Models')
+    
+
+
