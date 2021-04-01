@@ -19,7 +19,9 @@
     'depends': ['base'],
 
     # always loaded
-    'data': [],
+    'data': [
+        'views/views.xml',
+    ],
     # only loaded in demonstration mode
     'demo': [],
     'installable': True,
