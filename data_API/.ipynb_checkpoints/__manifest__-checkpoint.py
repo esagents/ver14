@@ -2,7 +2,7 @@
 {
     'name': "data_API",
 
-    'summary': """data API app""",
+    'summary': "data API app",
 
     'description': """nothing""",
 

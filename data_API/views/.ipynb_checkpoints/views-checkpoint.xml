@@ -1,8 +1,8 @@
 <odoo>
   <data>
-    <record model="ir.ui.view" id="my_module.list">
-      <field name="name">my_module list</field>
-      <field name="model">my_module.my_module</field>
+    <record model="ir.ui.view" id="data_api.list">
+      <field name="name">data_api list</field>
+      <field name="model">data_api.data_api</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -14,17 +14,17 @@
 
 
 
-    <record model="ir.actions.act_window" id="my_module.action_window">
-      <field name="name">my_module window</field>
-      <field name="res_model">my_module.my_module</field>
+    <record model="ir.actions.act_window" id="data_api.action_window">
+      <field name="name">data_apie window</field>
+      <field name="res_model">data_api.data_api</field>
       <field name="view_mode">tree,form</field>
     </record>
 
 
 
-    <record model="ir.actions.server" id="my_module.action_server">
-      <field name="name">my_module server</field>
-      <field name="model_id" ref="model_my_module_my_module"/>
+    <record model="ir.actions.server" id="data_api.action_server">
+      <field name="name">data_api server</field>
+      <field name="model_id" ref="data_api_data_api"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -36,15 +36,15 @@
     </record>
 
 
-    <menuitem name="my_module" id="my_module.menu_root"/>
+    <menuitem name="data_api" id="data_api.menu_root"/>
 
-    <menuitem name="Menu 1" id="my_module.menu_1" parent="my_module.menu_root"/>
-    <menuitem name="Menu 2" id="my_module.menu_2" parent="my_module.menu_root"/>
+    <menuitem name="Menu 1" id="data_api.menu_1" parent="data_api.menu_root"/>
+    <menuitem name="Menu 2" id="data_api.menu_2" parent="data_api.menu_root"/>
 
-    <menuitem name="List" id="my_module.menu_1_list" parent="my_module.menu_1"
-              action="my_module.action_window"/>
-    <menuitem name="Server to list" id="my_module" parent="my_module.menu_2"
-              action="my_module.action_server"/>
+    <menuitem name="List" id="data_api.menu_1_list" parent="data_api.menu_1"
+              action="data_api.action_window"/>
+    <menuitem name="Server to list" id="data_apie" parent="data_api.menu_2"
+              action="data_api.action_server"/>
 
   </data>
 </odoo>

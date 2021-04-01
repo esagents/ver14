@@ -3,9 +3,9 @@
 from odoo import models, fields, api
 
 
-class my_module(models.Model):
-    _name = 'my_module.my_module'
-    _description = 'my_module.my_module'
+class data_api(models.Model):
+    _name = 'data_api.data_api'
+    _description = 'data_api.data_api'
 
     name = fields.Char()
     value = fields.Integer()
